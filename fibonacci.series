@@ -1,0 +1,12 @@
+a=int(input("Enter the terms"))             #enter the no.of terms required
+b=0                                         #first element of series
+c=1                                         #second element of series
+if a<=0:
+    print("The requested series is",b);
+else:
+    print(b,c,end=" ");
+    for x in range(2,a):
+        next=b+c                           
+        print(next,end=" ");
+        b=c
+        c=next
